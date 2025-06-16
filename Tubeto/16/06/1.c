@@ -2,9 +2,7 @@
 
 int main() {
     int nums[] = {1, 0, 5, -2, -5, 7};
-    int sum = 0;
-
-    sum = nums[0] + nums[1] + nums[5];
+    int sum = nums[0] + nums[1] + nums[5];
 
     printf("O valor da soma é: %d\n", sum);
 
