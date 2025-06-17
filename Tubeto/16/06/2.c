@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-	int nums[10];
+	int nums[1];
 
 	for (int i = 1; i <= 10; i++) {
 		nums[i - 1] = i;
