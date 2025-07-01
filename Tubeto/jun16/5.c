@@ -11,11 +11,11 @@ int main() {
 
     for (int i = 0; i < 5; i++) {
         for (int j = i + 1; j < 5; j++) {
-            if (i != j) {  
+            if (i != j) {
                 if (nums[i] == nums[j] && nums[i] != repeated) {
                     printf("O número %d foi digitado mais de uma vez.\n", nums[i]);
                     repeated = nums[i];
-                    break;  // Para evitar múltiplas mensagens para o mesmo número
+                    break;
                 }
             }
         }

@@ -7,8 +7,7 @@ int main() {
     scanf("%d", &nums[0]);
 
     int maior = nums[0];
-    int indiceMaior = 0;
-    int indiceMenor = 0;
+    int indiceMaior, indiceMenor;
     int menor = nums[0];
 
 
