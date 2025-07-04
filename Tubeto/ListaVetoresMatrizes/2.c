@@ -2,8 +2,8 @@
 #include <math.h>
 
 int main() {
-    int v[5];
-    int n = 5;
+    int v[10];
+    int n = 10;
     float media = 0, resultado = 0;
 
     puts("Digite um valor para o vetor: ");
@@ -25,3 +25,4 @@ int main() {
 
     return 0;
 }
+s
