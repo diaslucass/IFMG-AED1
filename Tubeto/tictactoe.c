@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-char verificar_vencedor(char matriz[3][3]) {
+char verificar_vencedor(char (*matriz)[3]) {
     for (int i = 0; i < 3; i++) {
         if (matriz[i][0] == matriz[i][1] && matriz[i][1] == matriz[i][2] && matriz[i][0] != ' ')
             return matriz[i][0];
@@ -29,7 +29,6 @@ int main() {
     int round = 0;
 
     while (!estado) {
-        // Imprimir tabuleiro com índices
         printf("\n    0   1   2\n");
         for (int i = 0; i < 3; i++) {
             printf("  -------------\n");
