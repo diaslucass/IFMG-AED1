@@ -5,13 +5,12 @@ int main()
     char mat[3][3] = {
         {' ', ' ', ' '},
         {' ', ' ', ' '},
-        {' ', ' ', ' '}
-    };
+        {' ', ' ', ' '}};
 
     char jogador, ganhou = ' ';
     int posx, posy, contador = 0;
 
-    printf("Qual o jogador que começa? (X ou O)\n");
+    printf("Qual o jogador que comeï¿½a? (X ou O)\n");
     scanf(" %c", &jogador);
 
     while (1)
@@ -20,14 +19,16 @@ int main()
         printf("\n   1   2   3\n");
         for (int i = 0; i < 3; i++)
         {
-            printf("%d ", i+1);
+            printf("%d ", i + 1);
             for (int j = 0; j < 3; j++)
             {
                 printf(" %c ", mat[i][j]);
-                if (j < 2) printf("|");
+                if (j < 2)
+                    printf("|");
             }
             printf("\n");
-            if (i < 2) printf("  -----------\n");
+            if (i < 2)
+                printf("  -----------\n");
         }
 
         if (jogador == 'X')
@@ -39,8 +40,9 @@ int main()
             posx--;
             posy--;
 
-            if (posx < 0 || posx > 2 || posy < 0 || posy > 2 || mat[posx][posy] != ' ') {
-                printf("Jogada inválida. Tente novamente.\n");
+            if (posx < 0 || posx > 2 || posy < 0 || posy > 2 || mat[posx][posy] != ' ')
+            {
+                printf("Jogada invï¿½lida. Tente novamente.\n");
                 contador--;
                 continue;
             }
@@ -74,8 +76,9 @@ int main()
             posx--;
             posy--;
 
-            if (posx < 0 || posx > 2 || posy < 0 || posy > 2 || mat[posx][posy] != ' ') {
-                printf("Jogada inválida. Tente novamente.\n");
+            if (posx < 0 || posx > 2 || posy < 0 || posy > 2 || mat[posx][posy] != ' ')
+            {
+                printf("Jogada invï¿½lida. Tente novamente.\n");
                 contador--; //
                 continue;
             }
@@ -106,21 +109,21 @@ int main()
         }
     }
 
-
     printf("\nResultado final:\n");
     printf("   1   2   3\n");
     for (int i = 0; i < 3; i++)
     {
-        printf("%d ", i+1);
+        printf("%d ", i + 1);
         for (int j = 0; j < 3; j++)
         {
             printf(" %c ", mat[i][j]);
-            if (j < 2) printf("|");
+            if (j < 2)
+                printf("|");
         }
         printf("\n");
-        if (i < 2) printf("  -----------\n");
+        if (i < 2)
+            printf("  -----------\n");
     }
-
 
     if (ganhou == 'X' || ganhou == 'O')
     {
@@ -128,7 +131,7 @@ int main()
     }
     else
     {
-        printf("\n Empate! Ninguém venceu.\n");
+        printf("\n Empate! Ninguï¿½m venceu.\n");
     }
 
     return 0;
